@@ -61,3 +61,8 @@ a
 {
     font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
+
+.system-message
+{
+    color: red;
+}

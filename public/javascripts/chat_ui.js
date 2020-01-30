@@ -5,7 +5,7 @@ function divEscapedContentElement(message)
 
 function divSystemContentElement(message)
 {
-    return $('<div></div>').html(`<i>${message}</i>`)
+    return $('<div></div>').html(`<i class="system-message">System message: ${message}</i>`)
 }
 
 function processUserInput(chatApp, socket)
@@ -18,7 +18,7 @@ function processUserInput(chatApp, socket)
         systemMessage = chatApp.processCommand(message)
         if (systemMessage)
         {
-            $('#messages').append(divEscapedContentElement(message))
+            $('#messages').append(divSystemContentElement(systemMessage))
         }
     }
     else
