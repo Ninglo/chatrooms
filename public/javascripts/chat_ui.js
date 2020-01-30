@@ -71,6 +71,8 @@ $(document).ready(
             {
                 var newElement = $('<div></div>').text(message.text)
                 $('messages').append(newElement)
+                console.log(`the text: ${message.text}`)
+                console.log(`Receive messages`)
             }
         )
 
