@@ -1,2 +1,2 @@
 # chatrooms
-  nodejs in action中实时聊天室的源码
+  实时聊天室的源码
